@@ -1,0 +1,17 @@
+dataset,alpha_val,alpha_label,method,f1_mean,f1_std,accuracy_mean
+unsw_nb15,0.1,Dirichlet_a0.1,FedAvg,0.8139,0.0688,0.7617
+unsw_nb15,0.1,Dirichlet_a0.1,FedProx,0.8323,0.0347,0.8011
+unsw_nb15,0.1,Dirichlet_a0.1,FedNova,0.6,0.3436,0.7123
+unsw_nb15,0.1,Dirichlet_a0.1,FedZT_Edge,0.5702,0.3357,0.6789
+unsw_nb15,0.5,Dirichlet_a0.5,FedAvg,0.8499,0.0208,0.8304
+unsw_nb15,0.5,Dirichlet_a0.5,FedProx,0.8407,0.0162,0.8194
+unsw_nb15,0.5,Dirichlet_a0.5,FedNova,0.8536,0.0188,0.8395
+unsw_nb15,0.5,Dirichlet_a0.5,FedZT_Edge,0.8407,0.0131,0.8234
+unsw_nb15,1.0,Dirichlet_a1.0,FedAvg,0.8639,0.0047,0.8482
+unsw_nb15,1.0,Dirichlet_a1.0,FedProx,0.8486,0.0059,0.8311
+unsw_nb15,1.0,Dirichlet_a1.0,FedNova,0.8487,0.0229,0.8354
+unsw_nb15,1.0,Dirichlet_a1.0,FedZT_Edge,0.8523,0.0061,0.8351
+unsw_nb15,inf,IID,FedAvg,0.8672,0.0001,0.8511
+unsw_nb15,inf,IID,FedProx,0.8577,0.0036,0.8411
+unsw_nb15,inf,IID,FedNova,0.8673,0.0001,0.8512
+unsw_nb15,inf,IID,FedZT_Edge,0.858,0.0034,0.8408
