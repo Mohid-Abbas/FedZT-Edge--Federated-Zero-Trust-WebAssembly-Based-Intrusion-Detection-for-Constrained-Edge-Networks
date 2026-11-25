@@ -1,0 +1,17 @@
+dataset,malicious_rate,malicious_pct,defense_enabled,defense_mode,aggregation_method,f1_mean,f1_std,filter_precision,filter_recall,benign_preservation,delta_f1_drop
+unsw_nb15,0.0,0%,False,No_Defense,FedAvg,0.8499,0.0208,1.0,0.0,1.0,0.0
+unsw_nb15,0.0,0%,False,FedProx_No_Defense,FedProx,0.8407,0.0162,1.0,0.0,1.0,0.0
+unsw_nb15,0.0,0%,False,FLTrust,FLTrust,0.7487,0.0219,1.0,0.0,1.0,0.0
+unsw_nb15,0.0,0%,True,With_GMM_Defense,FedProx,0.8374,0.0165,1.0,0.0,1.0,0.0
+unsw_nb15,0.1,10%,False,No_Defense,FedAvg,0.7007,0.1,0.0,0.0,1.0,0.1492
+unsw_nb15,0.1,10%,False,FedProx_No_Defense,FedProx,0.6958,0.0679,0.0,0.0,1.0,0.1449
+unsw_nb15,0.1,10%,False,FLTrust,FLTrust,0.7537,0.0148,0.0,0.0,1.0,-0.005
+unsw_nb15,0.1,10%,True,With_GMM_Defense,FedProx,0.6892,0.0511,1.0,0.0,1.0,0.1482
+unsw_nb15,0.2,20%,False,No_Defense,FedAvg,0.4814,0.2414,0.0,0.0,1.0,0.3685
+unsw_nb15,0.2,20%,False,FedProx_No_Defense,FedProx,0.4692,0.1928,0.0,0.0,1.0,0.3715
+unsw_nb15,0.2,20%,False,FLTrust,FLTrust,0.7148,0.0281,0.0,0.0,1.0,0.0339
+unsw_nb15,0.2,20%,True,With_GMM_Defense,FedProx,0.4714,0.1802,1.0,0.0,1.0,0.366
+unsw_nb15,0.3,30%,False,No_Defense,FedAvg,0.2985,0.3773,0.0,0.0,1.0,0.5514
+unsw_nb15,0.3,30%,False,FedProx_No_Defense,FedProx,0.3125,0.3716,0.0,0.0,1.0,0.5282
+unsw_nb15,0.3,30%,False,FLTrust,FLTrust,0.72,0.0325,0.0,0.0,1.0,0.0287
+unsw_nb15,0.3,30%,True,With_GMM_Defense,FedProx,0.3083,0.3634,1.0,0.0,1.0,0.5291
