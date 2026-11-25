@@ -1,0 +1,13 @@
+dataset,comparison,mean_a,std_a,mean_b,std_b,test_type,statistic,raw_p_value,holm_adjusted_p,cohens_d,significant_alpha05
+unsw_nb15,FedZT-Edge vs B1,0.8407,0.0131,0.8784,0.0077,Welch t-test,-3.5158,0.0345,0.1742,-2.8707,False
+unsw_nb15,FedZT-Edge vs B2,0.8407,0.0131,0.8672,0.0001,Welch t-test,-2.8724,0.1028,0.4113,-2.3453,False
+unsw_nb15,FedZT-Edge vs B3,0.8407,0.0131,0.8499,0.0208,Welch t-test,-0.5295,0.6294,1.0000,-0.4324,False
+unsw_nb15,FedZT-Edge vs B4,0.8407,0.0131,0.8407,0.0162,Welch t-test,0.0001,0.9999,1.0000,0.0001,False
+unsw_nb15,FedZT-Edge vs B5,0.8407,0.0131,0.8407,0.0162,Welch t-test,0.0001,0.9999,1.0000,0.0001,False
+unsw_nb15,FedZT-Edge vs B6,0.8407,0.0131,0.4971,0.0880,Welch t-test,5.4600,0.0290,0.1742,4.4581,False
+cicids2017,FedZT-Edge vs B1,0.9153,0.0050,0.9690,0.0034,Welch t-test,-12.5821,0.0005,0.0027,-10.2732,True
+cicids2017,FedZT-Edge vs B2,0.9153,0.0050,0.9435,0.0025,Welch t-test,-7.1278,0.0059,0.0293,-5.8198,True
+cicids2017,FedZT-Edge vs B3,0.9153,0.0050,0.9371,0.0107,Welch t-test,-2.6133,0.0844,0.2533,-2.1337,False
+cicids2017,FedZT-Edge vs B4,0.9153,0.0050,0.9165,0.0043,Wilcoxon / Mann-Whitney,2.0000,0.4000,0.8000,-0.2041,False
+cicids2017,FedZT-Edge vs B5,0.9153,0.0050,0.9165,0.0043,Wilcoxon / Mann-Whitney,2.0000,0.4000,0.8000,-0.2041,False
+cicids2017,FedZT-Edge vs B6,0.9153,0.0050,0.5608,0.0481,Welch t-test,10.3708,0.0085,0.0341,8.4677,True
