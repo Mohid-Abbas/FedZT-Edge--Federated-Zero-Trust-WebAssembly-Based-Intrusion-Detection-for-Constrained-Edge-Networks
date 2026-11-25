@@ -1,0 +1,8 @@
+ID,Configuration,F1_Mean,F1_Std,Accuracy_Mean,Energy_Joules_Round,Comm_MB_Round
+B1,Centralized (Pooled),0.8784,0.0094,0.8637,,
+B2,IID FedAvg (Standard),0.8672,0.0001,0.8511,9.9989,4.1
+B3,Non-IID FedAvg,0.8499,0.0255,0.8304,10.2655,4.0839
+B4,Non-IID FedProx (mu=0.1),0.8407,0.0199,0.8194,12.3463,4.1082
+B5,Non-IID FL + GMM Filter,0.8407,0.0199,0.8194,12.2777,4.1082
+B6,Local Wasm-Only (Isolated),0.4971,0.1078,0.6115,0.85,0.0
+FedZT-Edge,FedZT-Edge (Proposed Treatment),0.8407,0.016,0.8234,13.1634,4.1113
