@@ -1,0 +1,20 @@
+ablation_id,name,variant,f1_mean,f1_std,notes
+a,Update Filter under 20% Attack,Filter=Disabled,0.8071,0.1107,Isolates robustness gained by GMM+K-means update filtering
+a,Update Filter under 20% Attack,Filter=Enabled,0.8312,0.123,Isolates robustness gained by GMM+K-means update filtering
+b,FedProx mu Sweep (alpha=0.1),mu=0.01,0.9023,0.0294,Quantifies proximal constraint value against severe Dirichlet skew
+b,FedProx mu Sweep (alpha=0.1),mu=0.1,0.891,0.0168,Quantifies proximal constraint value against severe Dirichlet skew
+b,FedProx mu Sweep (alpha=0.1),mu=0.5,0.8755,0.0179,Quantifies proximal constraint value against severe Dirichlet skew
+b,FedProx mu Sweep (alpha=0.1),mu=1.0,0.7931,0.0317,Quantifies proximal constraint value against severe Dirichlet skew
+c,Chi-Square Feature Count k,k=10_features,0.8898,0.0062,Evaluates detection accuracy vs edge feature extraction complexity
+c,Chi-Square Feature Count k,k=20_features,0.9153,0.005,Evaluates detection accuracy vs edge feature extraction complexity
+c,Chi-Square Feature Count k,k=30_features,0.918,0.001,Evaluates detection accuracy vs edge feature extraction complexity
+d,Mitigation Engine,DQN Adaptive Trust Agent,-0.1948,2.9649,Mean cumulative reward per zero-trust decision (Dynamic RL)
+d,Mitigation Engine,Static Threshold Policy,2.0236,0.7427,Mean cumulative reward per zero-trust decision (Fixed Rules)
+e,Cryptographic Envelope,Crypto=Disabled (Plaintext),0.9247,0.1069,Total crypto latency (ms). Ciphertext payload: 15621.0 bytes
+e,Cryptographic Envelope,Crypto=Enabled (AES+RSA),1.5246,0.2274,Total crypto latency (ms). Ciphertext payload: 15617.0 bytes
+f,Edge Execution Runtime,Runtime=WASM,0.2764,0.0702,Batch latency (ms). Memory: 4.21 MB. Fuel/batch: 70400
+f,Edge Execution Runtime,Runtime=NATIVE,0.177,0.0365,Batch latency (ms). Memory: 1.21 MB. Fuel/batch: 0
+g,Network Churn & Stragglers,Churn=0% Dropout,0.9153,0.005,Tests federation robustness against edge client connection dropouts
+g,Network Churn & Stragglers,Churn=20% Dropout,0.9092,0.0189,Tests federation robustness against edge client connection dropouts
+h,Zero-Trust Availability,PDP Reachable (Online Agent),100.0,0.0,Full central policy decision point reachable
+h,Zero-Trust Availability,Local Snapshot Fallback (Partitioned),64.8,1.45,Local edge snapshot preserves availability with 64.8% action alignment
