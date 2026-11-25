@@ -1,0 +1,17 @@
+dataset,malicious_rate,malicious_pct,defense_enabled,defense_mode,aggregation_method,f1_mean,f1_std,filter_precision,filter_recall,benign_preservation,delta_f1_drop
+cicids2017,0.0,0%,False,No_Defense,FedAvg,0.9371,0.0107,1.0,0.0,1.0,0.0
+cicids2017,0.0,0%,False,FedProx_No_Defense,FedProx,0.9165,0.0043,1.0,0.0,1.0,0.0
+cicids2017,0.0,0%,False,FLTrust,FLTrust,0.4162,0.0968,1.0,0.0,1.0,0.0
+cicids2017,0.0,0%,True,With_GMM_Defense,FedProx,0.9089,0.008,0.6667,0.0,0.9,0.0
+cicids2017,0.1,10%,False,No_Defense,FedAvg,0.8877,0.0587,0.0,0.0,1.0,0.0494
+cicids2017,0.1,10%,False,FedProx_No_Defense,FedProx,0.8362,0.089,0.0,0.0,1.0,0.0803
+cicids2017,0.1,10%,False,FLTrust,FLTrust,0.4562,0.1408,0.0,0.0,1.0,-0.04
+cicids2017,0.1,10%,True,With_GMM_Defense,FedProx,0.8791,0.0577,0.6667,0.6667,0.963,0.0298
+cicids2017,0.2,20%,False,No_Defense,FedAvg,0.8599,0.0898,0.0,0.0,1.0,0.0772
+cicids2017,0.2,20%,False,FedProx_No_Defense,FedProx,0.7696,0.1767,0.0,0.0,1.0,0.1469
+cicids2017,0.2,20%,False,FLTrust,FLTrust,0.4476,0.2073,0.0,0.0,1.0,-0.0314
+cicids2017,0.2,20%,True,With_GMM_Defense,FedProx,0.8207,0.136,0.6667,0.5,0.9583,0.0882
+cicids2017,0.3,30%,False,No_Defense,FedAvg,0.8452,0.117,0.0,0.0,1.0,0.0919
+cicids2017,0.3,30%,False,FedProx_No_Defense,FedProx,0.8362,0.0788,0.0,0.0,1.0,0.0803
+cicids2017,0.3,30%,False,FLTrust,FLTrust,0.4245,0.1736,0.0,0.0,1.0,-0.0083
+cicids2017,0.3,30%,True,With_GMM_Defense,FedProx,0.8883,0.0426,1.0,0.4444,1.0,0.0206
