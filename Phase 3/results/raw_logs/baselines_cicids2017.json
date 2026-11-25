@@ -1,0 +1,734 @@
+[
+  {
+    "accuracy": 0.9817587802885924,
+    "f1": 0.9727087576374746,
+    "precision": 0.9699431356620634,
+    "recall": 0.9754901960784313,
+    "roc_auc": 0.9934345284323066,
+    "train_time_sec": 4.2782809999989695,
+    "baseline_id": "B1",
+    "baseline_name": "Centralized (Pooled)",
+    "seed": 42,
+    "dataset": "cicids2017",
+    "energy_rpi4": 27.380998399993405,
+    "energy_jetson": 24.682390384609437,
+    "energy_desktop": 62.52872230767725
+  },
+  {
+    "baseline_id": "B2",
+    "f1": 0.9425287356321839,
+    "accuracy": 0.9618840185134767,
+    "precision": 0.9471947194719472,
+    "recall": 0.9379084967320261,
+    "roc_auc": 0.991214568037641,
+    "round_f1_history": [
+      0.8799283154121864,
+      0.9149659863945578,
+      0.9219858156028369,
+      0.924223602484472,
+      0.9297163995067818,
+      0.9341513292433538,
+      0.9404517453798767,
+      0.9425287356321839
+    ],
+    "total_time_sec": 12.54065830000036,
+    "mb_transferred": 4.0980987548828125,
+    "energy_joules_per_round": 10.03251536000753,
+    "latency_stats": {
+      "mean_ms": 0.0,
+      "p95_ms": 0.0,
+      "p99_ms": 0.0,
+      "max_ms": 0.0
+    },
+    "drl_avg_reward": null,
+    "drl_action_distribution": {
+      "0": 0,
+      "1": 0,
+      "2": 0,
+      "3": 0
+    },
+    "filter_metrics_last_round": {
+      "filter_precision": 1.0,
+      "filter_recall": 0.0,
+      "benign_preservation": 1.0
+    },
+    "baseline_name": "IID FedAvg (Standard)",
+    "seed": 42,
+    "dataset": "cicids2017"
+  },
+  {
+    "baseline_id": "B3",
+    "f1": 0.9503959983326385,
+    "accuracy": 0.9676014157364552,
+    "precision": 0.9702127659574468,
+    "recall": 0.9313725490196079,
+    "roc_auc": 0.9919174693152066,
+    "round_f1_history": [
+      0.8814175374829623,
+      0.9075921908893709,
+      0.9317032040472175,
+      0.9342159702110053,
+      0.9470171047142261,
+      0.949874686716792,
+      0.948203842940685,
+      0.9503959983326385
+    ],
+    "total_time_sec": 12.749800899997354,
+    "mb_transferred": 4.096615791320801,
+    "energy_joules_per_round": 10.199830560002011,
+    "latency_stats": {
+      "mean_ms": 0.0,
+      "p95_ms": 0.0,
+      "p99_ms": 0.0,
+      "max_ms": 0.0
+    },
+    "drl_avg_reward": null,
+    "drl_action_distribution": {
+      "0": 0,
+      "1": 0,
+      "2": 0,
+      "3": 0
+    },
+    "filter_metrics_last_round": {
+      "filter_precision": 1.0,
+      "filter_recall": 0.0,
+      "benign_preservation": 1.0
+    },
+    "baseline_name": "Non-IID FedAvg",
+    "seed": 42,
+    "dataset": "cicids2017"
+  },
+  {
+    "baseline_id": "B4",
+    "f1": 0.9195205479452054,
+    "accuracy": 0.9488156820038116,
+    "precision": 0.9658273381294964,
+    "recall": 0.8774509803921569,
+    "roc_auc": 0.9867497938334174,
+    "round_f1_history": [
+      0.7266149870801034,
+      0.8802530501581564,
+      0.8937472671622213,
+      0.9066551426101987,
+      0.9154869154869155,
+      0.9168096054888508,
+      0.9185501066098081,
+      0.9195205479452054
+    ],
+    "total_time_sec": 15.623329199996078,
+    "mb_transferred": 4.107704162597656,
+    "energy_joules_per_round": 12.498653440002819,
+    "latency_stats": {
+      "mean_ms": 0.0,
+      "p95_ms": 0.0,
+      "p99_ms": 0.0,
+      "max_ms": 0.0
+    },
+    "drl_avg_reward": null,
+    "drl_action_distribution": {
+      "0": 0,
+      "1": 0,
+      "2": 0,
+      "3": 0
+    },
+    "filter_metrics_last_round": {
+      "filter_precision": 1.0,
+      "filter_recall": 0.0,
+      "benign_preservation": 1.0
+    },
+    "baseline_name": "Non-IID FedProx (mu=0.1)",
+    "seed": 42,
+    "dataset": "cicids2017"
+  },
+  {
+    "baseline_id": "B5",
+    "f1": 0.9195205479452054,
+    "accuracy": 0.9488156820038116,
+    "precision": 0.9658273381294964,
+    "recall": 0.8774509803921569,
+    "roc_auc": 0.9867497938334174,
+    "round_f1_history": [
+      0.7266149870801034,
+      0.8802530501581564,
+      0.8937472671622213,
+      0.9066551426101987,
+      0.9154869154869155,
+      0.9168096054888508,
+      0.9185501066098081,
+      0.9195205479452054
+    ],
+    "total_time_sec": 15.796222599994508,
+    "mb_transferred": 4.107704162597656,
+    "energy_joules_per_round": 12.636967759992695,
+    "latency_stats": {
+      "mean_ms": 0.0,
+      "p95_ms": 0.0,
+      "p99_ms": 0.0,
+      "max_ms": 0.0
+    },
+    "drl_avg_reward": null,
+    "drl_action_distribution": {
+      "0": 0,
+      "1": 0,
+      "2": 0,
+      "3": 0
+    },
+    "filter_metrics_last_round": {
+      "filter_precision": 1.0,
+      "filter_recall": 0.0,
+      "benign_preservation": 1.0,
+      "num_flagged": 0
+    },
+    "baseline_name": "Non-IID FL + GMM Filter",
+    "seed": 42,
+    "dataset": "cicids2017"
+  },
+  {
+    "baseline_id": "B6",
+    "baseline_name": "Local Wasm-Only (Isolated)",
+    "accuracy": 0.6320718758508032,
+    "accuracy_std": 0.2495066750732406,
+    "f1": 0.5204027139127887,
+    "f1_std": 0.3063020597437323,
+    "precision": 0.6150395323224326,
+    "recall": 0.6949346405228758,
+    "roc_auc": 0.9065109775365162,
+    "train_time_sec": 4.260542900003202,
+    "total_fuel": 40403000,
+    "seed": 42,
+    "dataset": "cicids2017",
+    "energy_joules_per_round": 0.85,
+    "mb_transferred": 0.0
+  },
+  {
+    "baseline_id": "FedZT-Edge",
+    "f1": 0.9181311615945135,
+    "accuracy": 0.9479989109719575,
+    "precision": 0.9657348963029756,
+    "recall": 0.875,
+    "roc_auc": 0.9865226102690974,
+    "round_f1_history": [
+      0.7822222222222223,
+      0.881447963800905,
+      0.8930762489044698,
+      0.9017391304347826,
+      0.9079913606911447,
+      0.9116760017233951,
+      0.9177377892030848,
+      0.9181311615945135
+    ],
+    "total_time_sec": 16.34343010000157,
+    "mb_transferred": 4.111518859863281,
+    "energy_joules_per_round": 13.624735679995503,
+    "latency_stats": {
+      "mean_ms": 0.0006088529974658741,
+      "p95_ms": 0.0006088529974658741,
+      "p99_ms": 0.0006088529974658741,
+      "max_ms": 0.0006088529974658741
+    },
+    "drl_avg_reward": -0.4504200000000001,
+    "drl_action_distribution": {
+      "0": 0,
+      "1": 215,
+      "2": 285,
+      "3": 0
+    },
+    "filter_metrics_last_round": {
+      "filter_precision": 1.0,
+      "filter_recall": 0.0,
+      "benign_preservation": 1.0,
+      "num_flagged": 0
+    },
+    "baseline_name": "FedZT-Edge (Proposed Treatment)",
+    "seed": 42,
+    "dataset": "cicids2017"
+  },
+  {
+    "accuracy": 0.9798529812142662,
+    "f1": 0.9699186991869919,
+    "precision": 0.9652103559870551,
+    "recall": 0.9746732026143791,
+    "roc_auc": 0.9940963965550832,
+    "train_time_sec": 4.0885529999941355,
+    "baseline_id": "B1",
+    "baseline_name": "Centralized (Pooled)",
+    "seed": 101,
+    "dataset": "cicids2017",
+    "energy_rpi4": 26.166739199962468,
+    "energy_jetson": 23.587805769196937,
+    "energy_desktop": 59.75577461529891
+  },
+  {
+    "baseline_id": "B2",
+    "f1": 0.9469354175236528,
+    "accuracy": 0.9648788456302749,
+    "precision": 0.9536039768019884,
+    "recall": 0.940359477124183,
+    "roc_auc": 0.9909948905382214,
+    "round_f1_history": [
+      0.8689839572192514,
+      0.9142614601018676,
+      0.9195498124218424,
+      0.9283643892339545,
+      0.9344329896907216,
+      0.9370111156854672,
+      0.939729397293973,
+      0.9469354175236528
+    ],
+    "total_time_sec": 12.864693499999703,
+    "mb_transferred": 4.028617858886719,
+    "energy_joules_per_round": 10.291744320007275,
+    "latency_stats": {
+      "mean_ms": 0.0,
+      "p95_ms": 0.0,
+      "p99_ms": 0.0,
+      "max_ms": 0.0
+    },
+    "drl_avg_reward": null,
+    "drl_action_distribution": {
+      "0": 0,
+      "1": 0,
+      "2": 0,
+      "3": 0
+    },
+    "filter_metrics_last_round": {
+      "filter_precision": 1.0,
+      "filter_recall": 0.0,
+      "benign_preservation": 1.0
+    },
+    "baseline_name": "IID FedAvg (Standard)",
+    "seed": 101,
+    "dataset": "cicids2017"
+  },
+  {
+    "baseline_id": "B3",
+    "f1": 0.9242160278745645,
+    "accuracy": 0.9526272801524639,
+    "precision": 0.9897388059701493,
+    "recall": 0.8668300653594772,
+    "roc_auc": 0.9905964018927295,
+    "round_f1_history": [
+      0.7635270541082164,
+      0.8761140819964349,
+      0.8945518453427065,
+      0.9049733570159858,
+      0.9069148936170213,
+      0.9074811863656486,
+      0.9069973427812223,
+      0.9242160278745645
+    ],
+    "total_time_sec": 12.477592499999446,
+    "mb_transferred": 4.025284767150879,
+    "energy_joules_per_round": 9.982063839997863,
+    "latency_stats": {
+      "mean_ms": 0.0,
+      "p95_ms": 0.0,
+      "p99_ms": 0.0,
+      "max_ms": 0.0
+    },
+    "drl_avg_reward": null,
+    "drl_action_distribution": {
+      "0": 0,
+      "1": 0,
+      "2": 0,
+      "3": 0
+    },
+    "filter_metrics_last_round": {
+      "filter_precision": 1.0,
+      "filter_recall": 0.0,
+      "benign_preservation": 1.0
+    },
+    "baseline_name": "Non-IID FedAvg",
+    "seed": 101,
+    "dataset": "cicids2017"
+  },
+  {
+    "baseline_id": "B4",
+    "f1": 0.9103448275862069,
+    "accuracy": 0.9433705417914511,
+    "precision": 0.9635036496350365,
+    "recall": 0.8627450980392157,
+    "roc_auc": 0.9849867025890253,
+    "round_f1_history": [
+      0.6851063829787234,
+      0.8539843390142792,
+      0.8711547035220687,
+      0.8933566433566433,
+      0.8996960486322189,
+      0.9019947961838681,
+      0.9056277056277057,
+      0.9103448275862069
+    ],
+    "total_time_sec": 15.755561700003454,
+    "mb_transferred": 4.076629638671875,
+    "energy_joules_per_round": 12.60444016000256,
+    "latency_stats": {
+      "mean_ms": 0.0,
+      "p95_ms": 0.0,
+      "p99_ms": 0.0,
+      "max_ms": 0.0
+    },
+    "drl_avg_reward": null,
+    "drl_action_distribution": {
+      "0": 0,
+      "1": 0,
+      "2": 0,
+      "3": 0
+    },
+    "filter_metrics_last_round": {
+      "filter_precision": 1.0,
+      "filter_recall": 0.0,
+      "benign_preservation": 1.0
+    },
+    "baseline_name": "Non-IID FedProx (mu=0.1)",
+    "seed": 101,
+    "dataset": "cicids2017"
+  },
+  {
+    "baseline_id": "B5",
+    "f1": 0.9103448275862069,
+    "accuracy": 0.9433705417914511,
+    "precision": 0.9635036496350365,
+    "recall": 0.8627450980392157,
+    "roc_auc": 0.9849867025890253,
+    "round_f1_history": [
+      0.6851063829787234,
+      0.8539843390142792,
+      0.8711547035220687,
+      0.8933566433566433,
+      0.8996960486322189,
+      0.9019947961838681,
+      0.9056277056277057,
+      0.9103448275862069
+    ],
+    "total_time_sec": 15.56296470000234,
+    "mb_transferred": 4.076629638671875,
+    "energy_joules_per_round": 12.45036080001155,
+    "latency_stats": {
+      "mean_ms": 0.0,
+      "p95_ms": 0.0,
+      "p99_ms": 0.0,
+      "max_ms": 0.0
+    },
+    "drl_avg_reward": null,
+    "drl_action_distribution": {
+      "0": 0,
+      "1": 0,
+      "2": 0,
+      "3": 0
+    },
+    "filter_metrics_last_round": {
+      "filter_precision": 1.0,
+      "filter_recall": 0.0,
+      "benign_preservation": 1.0,
+      "num_flagged": 0
+    },
+    "baseline_name": "Non-IID FL + GMM Filter",
+    "seed": 101,
+    "dataset": "cicids2017"
+  },
+  {
+    "baseline_id": "B6",
+    "baseline_name": "Local Wasm-Only (Isolated)",
+    "accuracy": 0.7224067519738633,
+    "accuracy_std": 0.2091943997187768,
+    "f1": 0.5336181393947714,
+    "f1_std": 0.32640075647592426,
+    "precision": 0.6276198584497207,
+    "recall": 0.5974673202614379,
+    "roc_auc": 0.9407849542430284,
+    "train_time_sec": 4.2818288999988,
+    "total_fuel": 40403000,
+    "seed": 101,
+    "dataset": "cicids2017",
+    "energy_joules_per_round": 0.85,
+    "mb_transferred": 0.0
+  },
+  {
+    "baseline_id": "FedZT-Edge",
+    "f1": 0.9083044982698962,
+    "accuracy": 0.9422815137489791,
+    "precision": 0.9650735294117647,
+    "recall": 0.8578431372549019,
+    "roc_auc": 0.9849573455351923,
+    "round_f1_history": [
+      0.6630611141157382,
+      0.8605504587155963,
+      0.8725490196078431,
+      0.8957697339729612,
+      0.8996960486322189,
+      0.9004780530204259,
+      0.9018245004344049,
+      0.9083044982698962
+    ],
+    "total_time_sec": 16.13074549999874,
+    "mb_transferred": 4.080147743225098,
+    "energy_joules_per_round": 13.454586960008601,
+    "latency_stats": {
+      "mean_ms": 0.0007211910079058726,
+      "p95_ms": 0.0007211910079058725,
+      "p99_ms": 0.0007211910079058725,
+      "max_ms": 0.0007211910079058725
+    },
+    "drl_avg_reward": -1.7648,
+    "drl_action_distribution": {
+      "0": 0,
+      "1": 0,
+      "2": 500,
+      "3": 0
+    },
+    "filter_metrics_last_round": {
+      "filter_precision": 1.0,
+      "filter_recall": 0.0,
+      "benign_preservation": 1.0,
+      "num_flagged": 0
+    },
+    "baseline_name": "FedZT-Edge (Proposed Treatment)",
+    "seed": 101,
+    "dataset": "cicids2017"
+  },
+  {
+    "accuracy": 0.976313640076232,
+    "f1": 0.9644752960391997,
+    "precision": 0.9640816326530612,
+    "recall": 0.9648692810457516,
+    "roc_auc": 0.9930170244224,
+    "train_time_sec": 4.058169699994323,
+    "baseline_id": "B1",
+    "baseline_name": "Centralized (Pooled)",
+    "seed": 2024,
+    "dataset": "cicids2017",
+    "energy_rpi4": 25.97228607996367,
+    "energy_jetson": 23.412517499967247,
+    "energy_desktop": 59.31171099991703
+  },
+  {
+    "baseline_id": "B2",
+    "f1": 0.940935192780968,
+    "accuracy": 0.9607949904710046,
+    "precision": 0.9448105436573312,
+    "recall": 0.9370915032679739,
+    "roc_auc": 0.9898576383050839,
+    "round_f1_history": [
+      0.870452528837622,
+      0.9136537643555933,
+      0.9192389006342495,
+      0.9287510477787091,
+      0.9308333333333333,
+      0.9355371900826446,
+      0.9387083504730563,
+      0.940935192780968
+    ],
+    "total_time_sec": 12.406226899998728,
+    "mb_transferred": 4.091020584106445,
+    "energy_joules_per_round": 9.92497224000399,
+    "latency_stats": {
+      "mean_ms": 0.0,
+      "p95_ms": 0.0,
+      "p99_ms": 0.0,
+      "max_ms": 0.0
+    },
+    "drl_avg_reward": null,
+    "drl_action_distribution": {
+      "0": 0,
+      "1": 0,
+      "2": 0,
+      "3": 0
+    },
+    "filter_metrics_last_round": {
+      "filter_precision": 1.0,
+      "filter_recall": 0.0,
+      "benign_preservation": 1.0
+    },
+    "baseline_name": "IID FedAvg (Standard)",
+    "seed": 2024,
+    "dataset": "cicids2017"
+  },
+  {
+    "baseline_id": "B3",
+    "f1": 0.9366776315789473,
+    "accuracy": 0.9580724203648244,
+    "precision": 0.9428807947019867,
+    "recall": 0.9305555555555556,
+    "roc_auc": 0.9894107772413444,
+    "round_f1_history": [
+      0.896611642050391,
+      0.9150382327952421,
+      0.9203916560238399,
+      0.9297658862876255,
+      0.9298464092984641,
+      0.9338265515824086,
+      0.9365210222588624,
+      0.9366776315789473
+    ],
+    "total_time_sec": 12.608819000000949,
+    "mb_transferred": 4.068326950073242,
+    "energy_joules_per_round": 10.08704576000455,
+    "latency_stats": {
+      "mean_ms": 0.0,
+      "p95_ms": 0.0,
+      "p99_ms": 0.0,
+      "max_ms": 0.0
+    },
+    "drl_avg_reward": null,
+    "drl_action_distribution": {
+      "0": 0,
+      "1": 0,
+      "2": 0,
+      "3": 0
+    },
+    "filter_metrics_last_round": {
+      "filter_precision": 1.0,
+      "filter_recall": 0.0,
+      "benign_preservation": 1.0
+    },
+    "baseline_name": "Non-IID FedAvg",
+    "seed": 2024,
+    "dataset": "cicids2017"
+  },
+  {
+    "baseline_id": "B4",
+    "f1": 0.9195402298850575,
+    "accuracy": 0.9485434249931936,
+    "precision": 0.96,
+    "recall": 0.8823529411764706,
+    "roc_auc": 0.9850666004798543,
+    "round_f1_history": [
+      0.7796442687747036,
+      0.900574458683164,
+      0.8955613577023499,
+      0.9040034438226431,
+      0.9086229086229086,
+      0.9158163265306123,
+      0.9169859514687101,
+      0.9195402298850575
+    ],
+    "total_time_sec": 15.687454999999318,
+    "mb_transferred": 4.1023712158203125,
+    "energy_joules_per_round": 12.549950960004935,
+    "latency_stats": {
+      "mean_ms": 0.0,
+      "p95_ms": 0.0,
+      "p99_ms": 0.0,
+      "max_ms": 0.0
+    },
+    "drl_avg_reward": null,
+    "drl_action_distribution": {
+      "0": 0,
+      "1": 0,
+      "2": 0,
+      "3": 0
+    },
+    "filter_metrics_last_round": {
+      "filter_precision": 1.0,
+      "filter_recall": 0.0,
+      "benign_preservation": 1.0
+    },
+    "baseline_name": "Non-IID FedProx (mu=0.1)",
+    "seed": 2024,
+    "dataset": "cicids2017"
+  },
+  {
+    "baseline_id": "B5",
+    "f1": 0.9195402298850575,
+    "accuracy": 0.9485434249931936,
+    "precision": 0.96,
+    "recall": 0.8823529411764706,
+    "roc_auc": 0.9850666004798543,
+    "round_f1_history": [
+      0.7796442687747036,
+      0.900574458683164,
+      0.8955613577023499,
+      0.9040034438226431,
+      0.9086229086229086,
+      0.9158163265306123,
+      0.9169859514687101,
+      0.9195402298850575
+    ],
+    "total_time_sec": 16.421161799997208,
+    "mb_transferred": 4.1023712158203125,
+    "energy_joules_per_round": 13.136920000001556,
+    "latency_stats": {
+      "mean_ms": 0.0,
+      "p95_ms": 0.0,
+      "p99_ms": 0.0,
+      "max_ms": 0.0
+    },
+    "drl_avg_reward": null,
+    "drl_action_distribution": {
+      "0": 0,
+      "1": 0,
+      "2": 0,
+      "3": 0
+    },
+    "filter_metrics_last_round": {
+      "filter_precision": 1.0,
+      "filter_recall": 0.0,
+      "benign_preservation": 1.0,
+      "num_flagged": 0
+    },
+    "baseline_name": "Non-IID FL + GMM Filter",
+    "seed": 2024,
+    "dataset": "cicids2017"
+  },
+  {
+    "baseline_id": "B6",
+    "baseline_name": "Local Wasm-Only (Isolated)",
+    "accuracy": 0.7078954533079227,
+    "accuracy_std": 0.2477479093831623,
+    "f1": 0.6283702850479408,
+    "f1_std": 0.2872479581269512,
+    "precision": 0.7464163248498589,
+    "recall": 0.7535130718954248,
+    "roc_auc": 0.9373178194647942,
+    "train_time_sec": 4.22547950000444,
+    "total_fuel": 40403000,
+    "seed": 2024,
+    "dataset": "cicids2017",
+    "energy_joules_per_round": 0.85,
+    "mb_transferred": 0.0
+  },
+  {
+    "baseline_id": "FedZT-Edge",
+    "f1": 0.9194716659565403,
+    "accuracy": 0.9485434249931936,
+    "precision": 0.9608192341941229,
+    "recall": 0.8815359477124183,
+    "roc_auc": 0.9851344886668427,
+    "round_f1_history": [
+      0.7856440511307768,
+      0.8980496453900709,
+      0.8962510897994769,
+      0.9016890428757037,
+      0.9112627986348123,
+      0.916595744680851,
+      0.9141392567278941,
+      0.9194716659565403
+    ],
+    "total_time_sec": 15.739640300002065,
+    "mb_transferred": 4.106793403625488,
+    "energy_joules_per_round": 13.141703440004495,
+    "latency_stats": {
+      "mean_ms": 0.000556476012498024,
+      "p95_ms": 0.000556476012498024,
+      "p99_ms": 0.000556476012498024,
+      "max_ms": 0.000556476012498024
+    },
+    "drl_avg_reward": -1.9088000000000003,
+    "drl_action_distribution": {
+      "0": 0,
+      "1": 0,
+      "2": 500,
+      "3": 0
+    },
+    "filter_metrics_last_round": {
+      "filter_precision": 1.0,
+      "filter_recall": 0.0,
+      "benign_preservation": 1.0,
+      "num_flagged": 0
+    },
+    "baseline_name": "FedZT-Edge (Proposed Treatment)",
+    "seed": 2024,
+    "dataset": "cicids2017"
+  }
+]
