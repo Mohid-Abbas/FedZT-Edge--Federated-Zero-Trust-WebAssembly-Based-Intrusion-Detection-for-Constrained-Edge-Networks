@@ -1,0 +1,154 @@
+[
+  {
+    "ablation_id": "a",
+    "name": "Update Filter under 20% Attack",
+    "variant": "Filter=Disabled",
+    "f1_mean": 0.4618,
+    "f1_std": 0.1797,
+    "notes": "Isolates robustness gained by GMM+K-means update filtering"
+  },
+  {
+    "ablation_id": "a",
+    "name": "Update Filter under 20% Attack",
+    "variant": "Filter=Enabled",
+    "f1_mean": 0.4714,
+    "f1_std": 0.1802,
+    "notes": "Isolates robustness gained by GMM+K-means update filtering"
+  },
+  {
+    "ablation_id": "b",
+    "name": "FedProx mu Sweep (alpha=0.1)",
+    "variant": "mu=0.01",
+    "f1_mean": 0.7555,
+    "f1_std": 0.0777,
+    "notes": "Quantifies proximal constraint value against severe Dirichlet skew"
+  },
+  {
+    "ablation_id": "b",
+    "name": "FedProx mu Sweep (alpha=0.1)",
+    "variant": "mu=0.1",
+    "f1_mean": 0.8322,
+    "f1_std": 0.0366,
+    "notes": "Quantifies proximal constraint value against severe Dirichlet skew"
+  },
+  {
+    "ablation_id": "b",
+    "name": "FedProx mu Sweep (alpha=0.1)",
+    "variant": "mu=0.5",
+    "f1_mean": 0.7779,
+    "f1_std": 0.0121,
+    "notes": "Quantifies proximal constraint value against severe Dirichlet skew"
+  },
+  {
+    "ablation_id": "b",
+    "name": "FedProx mu Sweep (alpha=0.1)",
+    "variant": "mu=1.0",
+    "f1_mean": 0.7495,
+    "f1_std": 0.0019,
+    "notes": "Quantifies proximal constraint value against severe Dirichlet skew"
+  },
+  {
+    "ablation_id": "c",
+    "name": "Chi-Square Feature Count k",
+    "variant": "k=10_features",
+    "f1_mean": 0.7943,
+    "f1_std": 0.0052,
+    "notes": "Evaluates detection accuracy vs edge feature extraction complexity"
+  },
+  {
+    "ablation_id": "c",
+    "name": "Chi-Square Feature Count k",
+    "variant": "k=20_features",
+    "f1_mean": 0.8374,
+    "f1_std": 0.0165,
+    "notes": "Evaluates detection accuracy vs edge feature extraction complexity"
+  },
+  {
+    "ablation_id": "c",
+    "name": "Chi-Square Feature Count k",
+    "variant": "k=30_features",
+    "f1_mean": 0.8937,
+    "f1_std": 0.0028,
+    "notes": "Evaluates detection accuracy vs edge feature extraction complexity"
+  },
+  {
+    "ablation_id": "d",
+    "name": "Mitigation Engine",
+    "variant": "DQN Adaptive Trust Agent",
+    "f1_mean": -1.1372,
+    "f1_std": 3.0998,
+    "notes": "Mean cumulative reward per zero-trust decision (Dynamic RL)"
+  },
+  {
+    "ablation_id": "d",
+    "name": "Mitigation Engine",
+    "variant": "Static Threshold Policy",
+    "f1_mean": 2.049,
+    "f1_std": 0.8254,
+    "notes": "Mean cumulative reward per zero-trust decision (Fixed Rules)"
+  },
+  {
+    "ablation_id": "e",
+    "name": "Cryptographic Envelope",
+    "variant": "Crypto=Disabled (Plaintext)",
+    "f1_mean": 1.1686,
+    "f1_std": 0.0295,
+    "notes": "Total crypto latency (ms). Ciphertext payload: 15579.0 bytes"
+  },
+  {
+    "ablation_id": "e",
+    "name": "Cryptographic Envelope",
+    "variant": "Crypto=Enabled (AES+RSA)",
+    "f1_mean": 1.7847,
+    "f1_std": 0.1454,
+    "notes": "Total crypto latency (ms). Ciphertext payload: 15596.0 bytes"
+  },
+  {
+    "ablation_id": "f",
+    "name": "Edge Execution Runtime",
+    "variant": "Runtime=WASM",
+    "f1_mean": 0.3753,
+    "f1_std": 0.058,
+    "notes": "Batch latency (ms). Memory: 4.21 MB. Fuel/batch: 70400"
+  },
+  {
+    "ablation_id": "f",
+    "name": "Edge Execution Runtime",
+    "variant": "Runtime=NATIVE",
+    "f1_mean": 0.3001,
+    "f1_std": 0.0272,
+    "notes": "Batch latency (ms). Memory: 1.21 MB. Fuel/batch: 0"
+  },
+  {
+    "ablation_id": "g",
+    "name": "Network Churn & Stragglers",
+    "variant": "Churn=0% Dropout",
+    "f1_mean": 0.8374,
+    "f1_std": 0.0165,
+    "notes": "Tests federation robustness against edge client connection dropouts"
+  },
+  {
+    "ablation_id": "g",
+    "name": "Network Churn & Stragglers",
+    "variant": "Churn=20% Dropout",
+    "f1_mean": 0.6916,
+    "f1_std": 0.2071,
+    "notes": "Tests federation robustness against edge client connection dropouts"
+  },
+  {
+    "ablation_id": "h",
+    "name": "Zero-Trust Availability",
+    "variant": "PDP Reachable (Online Agent)",
+    "f1_mean": 100.0,
+    "f1_std": 0.0,
+    "notes": "Full central policy decision point reachable"
+  },
+  {
+    "ablation_id": "h",
+    "name": "Zero-Trust Availability",
+    "variant": "Local Snapshot Fallback (Partitioned)",
+    "f1_mean": 49.0,
+    "f1_std": 1.45,
+    "notes": "Local edge snapshot preserves availability with 49.0% action alignment"
+  }
+]

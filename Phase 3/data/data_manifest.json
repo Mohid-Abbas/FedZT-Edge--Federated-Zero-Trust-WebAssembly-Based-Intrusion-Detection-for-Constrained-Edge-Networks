@@ -1,0 +1,42 @@
+{
+    "datasets": {
+        "UNSW-NB15": {
+            "file": "unsw_nb15_raw.parquet",
+            "md5": "620208aba476f910c5fd0609770c567e",
+            "records": 30000,
+            "features": 36,
+            "binary_distribution": {
+                "benign": 9584,
+                "attack": 20416
+            },
+            "classes": {
+                "Normal": 9584,
+                "Generic": 6844,
+                "Exploits": 5714,
+                "Fuzzers": 3111,
+                "DoS": 2098,
+                "Reconnaissance": 1794,
+                "Analysis": 342,
+                "Backdoor": 298,
+                "Shellcode": 193,
+                "Worms": 22
+            }
+        },
+        "CICIDS2017": {
+            "file": "cicids2017_raw.csv",
+            "md5": "3e17eddf64d1345a128eff2a8632b8e9",
+            "records": 26232,
+            "features": 79,
+            "binary_distribution": {
+                "benign": 20111,
+                "attack": 6121
+            },
+            "classes": {
+                "BENIGN": 20111,
+                "DDoS": 6121
+            }
+        }
+    },
+    "version": "1.0.0",
+    "protocol": "Dirichlet-ready stratified benchmark lake"
+}
