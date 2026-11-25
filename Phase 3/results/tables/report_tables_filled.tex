@@ -1,0 +1,42 @@
+% ===== ADVERSARIAL TABLE BODY (paste into Table 2) =====
+$0\%$ & FedAvg (No Defence) & $0.850$ & $0.000$ & --- & --- \\
+$0\%$ & FedProx (No Defence) & $0.841$ & $0.000$ & --- & --- \\
+$0\%$ & FLTrust (Anchor) & $0.749$ & $0.000$ & --- & --- \\
+$0\%$ & FedZT-Edge (GMM Filter) & $0.837$ & $0.000$ & 100.0\% & 0.0\% \\
+$10\%$ & FedAvg (No Defence) & $0.701$ & $0.149$ & --- & --- \\
+$10\%$ & FedProx (No Defence) & $0.696$ & $0.145$ & --- & --- \\
+$10\%$ & FLTrust (Anchor) & $0.754$ & $-0.005$ & --- & --- \\
+$10\%$ & FedZT-Edge (GMM Filter) & $0.689$ & $0.148$ & 100.0\% & 0.0\% \\
+$20\%$ & FedAvg (No Defence) & $0.481$ & $0.368$ & --- & --- \\
+$20\%$ & FedProx (No Defence) & $0.469$ & $0.371$ & --- & --- \\
+$20\%$ & FLTrust (Anchor) & $0.715$ & $0.034$ & --- & --- \\
+$20\%$ & FedZT-Edge (GMM Filter) & $0.471$ & $0.366$ & 100.0\% & 0.0\% \\
+$30\%$ & FedAvg (No Defence) & $0.298$ & $0.551$ & --- & --- \\
+$30\%$ & FedProx (No Defence) & $0.312$ & $0.528$ & --- & --- \\
+$30\%$ & FLTrust (Anchor) & $0.720$ & $0.029$ & --- & --- \\
+$30\%$ & FedZT-Edge (GMM Filter) & $0.308$ & $0.529$ & 100.0\% & 0.0\% \\
+
+% ===== ABLATION TABLE BODY (paste into Table 3) =====
+(a) & Update Filter under 20% Attack & Filter=Disabled & $0.462 \pm 0.180$ & Isolates robustness gained by GMM+K-means update filtering \\
+(a) & Update Filter under 20% Attack & Filter=Enabled & $0.471 \pm 0.180$ & Isolates robustness gained by GMM+K-means update filtering \\
+(b) & FedProx mu Sweep (alpha=0.1) & mu=0.01 & $0.755 \pm 0.078$ & Quantifies proximal constraint value against severe Dirichlet skew \\
+(b) & FedProx mu Sweep (alpha=0.1) & mu=0.1 & $0.832 \pm 0.037$ & Quantifies proximal constraint value against severe Dirichlet skew \\
+(b) & FedProx mu Sweep (alpha=0.1) & mu=0.5 & $0.778 \pm 0.012$ & Quantifies proximal constraint value against severe Dirichlet skew \\
+(b) & FedProx mu Sweep (alpha=0.1) & mu=1.0 & $0.750 \pm 0.002$ & Quantifies proximal constraint value against severe Dirichlet skew \\
+(c) & Chi-Square Feature Count k & k=10_features & $0.794 \pm 0.005$ & Evaluates detection accuracy vs edge feature extraction complexity \\
+(c) & Chi-Square Feature Count k & k=20_features & $0.837 \pm 0.017$ & Evaluates detection accuracy vs edge feature extraction complexity \\
+(c) & Chi-Square Feature Count k & k=30_features & $0.894 \pm 0.003$ & Evaluates detection accuracy vs edge feature extraction complexity \\
+(d) & Mitigation Engine & DQN Adaptive Trust Agent & $-1.137 \pm 3.100$ & Mean cumulative reward per zero-trust decision (Dynamic RL) \\
+(d) & Mitigation Engine & Static Threshold Policy & $2.049 \pm 0.825$ & Mean cumulative reward per zero-trust decision (Fixed Rules) \\
+(e) & Cryptographic Envelope & Crypto=Disabled (Plaintext) & $1.169 \pm 0.029$ & Total crypto latency (ms). Ciphertext payload: 15579.0 bytes \\
+(e) & Cryptographic Envelope & Crypto=Enabled (AES+RSA) & $1.785 \pm 0.145$ & Total crypto latency (ms). Ciphertext payload: 15596.0 bytes \\
+(f) & Edge Execution Runtime & Runtime=WASM & $0.375 \pm 0.058$ & Batch latency (ms). Memory: 4.21 MB. Fuel/batch: 70400 \\
+(f) & Edge Execution Runtime & Runtime=NATIVE & $0.300 \pm 0.027$ & Batch latency (ms). Memory: 1.21 MB. Fuel/batch: 0 \\
+(g) & Network Churn & Stragglers & Churn=0% Dropout & $0.837 \pm 0.017$ & Tests federation robustness against edge client connection dropouts \\
+(g) & Network Churn & Stragglers & Churn=20% Dropout & $0.692 \pm 0.207$ & Tests federation robustness against edge client connection dropouts \\
+(h) & Zero-Trust Availability & PDP Reachable (Online Agent) & $100.000 \pm 0.000$ & Full central policy decision point reachable \\
+(h) & Zero-Trust Availability & Local Snapshot Fallback (Partitioned) & $49.000 \pm 1.450$ & Local edge snapshot preserves availability with 49.0\% action alignment \\
+
+% ===== NARRATIVE SUMMARY (for Section 5 discussion) =====
+%   - At 20% attack: undefended F1=0.481 (drop=0.368), GMM-defended F1=0.471 (drop=0.366), mitigation=1%, benign preservation=100.0%, filter recall=0.0%
+%   - At 30% attack: undefended F1=0.298 (drop=0.551), GMM-defended F1=0.308 (drop=0.529), mitigation=4%, benign preservation=100.0%, filter recall=0.0%
